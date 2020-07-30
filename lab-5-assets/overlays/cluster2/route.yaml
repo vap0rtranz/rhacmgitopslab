@@ -3,4 +3,4 @@ kind: Route
 metadata:
   name: the-route
 spec:
-  host: changeme
+  host: web-app.apps.cluster-ptex-8e90.ptex-8e90.example.opentlc.com

@@ -3,4 +3,4 @@ kind: Route
 metadata:
   name: the-route
 spec:
-  host: changeme
+  host: web-app.apps.cluster-5535.sandbox909.opentlc.com
