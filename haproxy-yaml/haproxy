@@ -1,4 +1,4 @@
-#---------------------------------------------------------------------
+##---------------------------------------------------------------------
 # Example configuration for a possible web application.  See the
 # full configuration options online.
 #
@@ -70,9 +70,11 @@ frontend  main
 #---------------------------------------------------------------------
 backend app
     balance roundrobin
-    option httpchk GET / HTTP/1.1\r\nHost:\ <pacman_lb_hostname>
+    option httpchk GET / HTTP/1.1\r\nHost:\ pacman-ingress.apps.cluster-ptdonlin-8550.ptdonlin-8550.example.opentlc.com
+    http-request set-header Host pacman-ingress.apps.cluster-ptdonlin-8550.ptdonlin-8550.example.opentlc.com
     mode http 
-        server <server1_name> <server1_pacman_route>:<route_port> check
-        server <server2_name> <server2_pacman_route>:<route_port> check
-        server <server3_name> <server3_pacman_route>:<route_port> check
+        server cluster1 pacman.apps.cluster1.sandbox1678.opentlc.com:80 check
+        server cluster2 pacman.apps.cluster-8309.8309.sandbox1722.opentlc.com:80 check
+        server cluster3 pacman.apps.ocp4-ptd22-118e-ipi.azure.opentlc.com:80 check
+
 

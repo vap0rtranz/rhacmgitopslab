@@ -4,7 +4,7 @@ metadata:
   name: pacman
   namespace: pacman
 spec:
-  host: pacmanhosthere
+  host: pacman-ingress.apps.cluster-ptdonlin-8550.ptdonlin-8550.example.opentlc.com
   port:
     targetPort: 8080
   to:
