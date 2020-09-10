@@ -1,0 +1,7 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: mongo
+  namespace: mongo
+spec:
+  host: mongo-cluster3.apps.ocp4-ptd22-118e-ipi.azure.opentlc.com
