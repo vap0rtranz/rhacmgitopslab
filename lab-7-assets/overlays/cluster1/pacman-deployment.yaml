@@ -6,4 +6,8 @@ metadata:
   name: pacman
   namespace: pacman
 spec:
+<<<<<<< HEAD
   replicas: 2
+=======
+  replicas: 1
+>>>>>>> 68fb174ee9ce1f67395d5acf0776b690590d8bd1
