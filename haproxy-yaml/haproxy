@@ -70,10 +70,10 @@ frontend  main
 #---------------------------------------------------------------------
 backend app
     balance roundrobin
-    option httpchk GET / HTTP/1.1\r\nHost:\ pacman-ingress.apps.cluster-ptd-2-07bd.ptd-2-07bd.example.opentlc.com
-    http-request set-header Host pacman-ingress.apps.cluster-ptd-2-07bd.ptd-2-07bd.example.opentlc.com
+    option httpchk GET / HTTP/1.1\r\nHost:\ pacman-ingress.apps.cluster-ptd2virt-1418.ptd2virt-1418.example.opentlc.com
+    http-request set-header Host pacman-ingress.apps.cluster-ptd2virt-1418.ptd2virt-1418.example.opentlc.com
     mode http 
-        server cluster1 pacman.apps.cluster-6e80.6e80.sandbox507.opentlc.com:80 check
-        server cluster2 pacman.apps.cluster2.sandbox676.opentlc.com:80 check
-        server cluster3 pacman.apps.ocp4-ptd-2-7f4f-ipi.azure.opentlc.com:80 check
+        server cluster1 pacman.apps.cluster-ptd2virt-14d6.ptd2virt-14d6.example.opentlc.com:80 check
+        server cluster2 pacman.apps.cluster2.sandbox21.opentlc.com:80 check
+        server cluster3 pacman.apps.cluster-ptd2virt-e721.ptd2virt-e721.example.opentlc.com:80 check
 
